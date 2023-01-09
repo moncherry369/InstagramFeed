@@ -1,0 +1,67 @@
+.pagination a {
+    color: gray;
+    text-decoration: none;
+    border: 0;
+}
+.pagination a:hover {
+    color: gray;
+    background-color: white;
+    border: 0;
+}
+
+#Feed {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: sans-serif;    
+}
+.headers {
+    display: flex;
+   padding-left: 5px;
+    padding-right: 5px;
+    height:auto;
+}
+.headers p {
+    position: inherit;
+    margin-left:auto;
+    font-size: smaller;
+    color: grey;
+    padding-top:5px;
+}
+.posts {
+    outline: none;
+    border: 1px lightgrey solid;
+}
+img {
+   width:100%;
+   position: absolute left;
+}
+.caption {
+    margin: 0;
+    padding:3px;
+    font-size: medium;
+    max-width: 400px;
+}
+.post-imgs {
+    max-width: 400px;
+    height: auto;
+    overflow: hidden;
+}
+.caption p {
+    font-size: small;
+    height: fit-content;
+    padding: 5px;
+}
+.thumbnail img {
+    padding:5px;   
+}
+#FeedOnFeed {
+    color: rgb(7, 7, 164);
+}
+#GridOnGrid {
+    color: rgb(7, 7, 164);
+}
+.caption span {
+    padding: 2px;
+    font-size: small;
+}
