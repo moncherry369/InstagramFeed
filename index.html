@@ -6,6 +6,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <script src="https://kit.fontawesome.com/c6abad71ea.js" crossorigin="anonymous"></script>
+<!--google font-->
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Oswald:wght@200&display=swap"
+        rel="stylesheet">
 
     <title>Instagram Feed</title>
     <!--CSS Stylesheet-->
@@ -23,7 +26,7 @@
 <body>
     <!-- Nav Bar -->
     <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container">
+        <div class="container-fluid">
             <a class="navbar-brand d-flex text-dark align-items-center gap-1" id="instagramIcon" href="./index.html">
                 <i class="fa-brands fa-instagram m-1"></i>
                 <span>Instagram</span>
@@ -43,8 +46,8 @@
                         </button>
 
                         <!-- Modal Create -->
-                        <div class="modal fade" id="createPostModal" tabindex="-1" aria-labelledby="createPostModalLabel"
-                            aria-hidden="true">
+                        <div class="modal fade" id="createPostModal" tabindex="-1"
+                            aria-labelledby="createPostModalLabel" aria-hidden="true">
                             <div class="modal-dialog">
                                 <div class="modal-content">
                                     <div class="modal-header">
@@ -100,20 +103,189 @@
     <!-- Grid or Photo Feed Select-->
     <nav class="pagination justify-content-center" aria-label="Page navigation grid feed" id="pageViewSelectPhoto">
         <ul class="pagination pagination-md justify-content-center">
-            <li class="page-item">
-                <a class="page-link" href="./grid.html"  id="GridOnSquare">
-                    <i class="fa-solid fa-table-cells"></i>
-                </a>
+            <li class="page-item" id="paginationFeed">
+                <a class="page-link fa-solid fa-table-cells" href="./grid.html" id="GridOnFeed"></a>
             </li>
-            <li class="page-item" id="SuqareOnSquare">
-                <a class="page-link" href="./index.html">
-                    <i class="fa-solid fa-square"></i>
-                </a>
+            <li class="page-item" id="FeedOnFeed">
+                <a class="page-link fa-solid fa-square" href="./index.html" id="FeedOnFeed"></a>
             </li>
         </ul>
     </nav>
-    <!--CHANGE ACTIVE TAB GRID PHOTO TO BLUE-->
+    
+    <!--Photo Feed-->
+    <div id="Feed">
+        <!--ROW 1 POST 1-->
+        <br>
+        <div class="posts">
+            <div class="headers">
+                <h4 id="post1">Touch it</h4>
+                <p>01/01</p>
+            </div>
+            
+            <div class="post-imgs">
+                <img src="https://picsum.photos/400/400?random=1" alt="Post 1">
+            </div>
+            <div class="caption">
+                <span><strong>204 Likes</strong></span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi diam arcu, pharetra at est ut, blandit venenatis ligula. Nunc molestie.<strong>#BreatheCode</strong></p>
+            </div>
+        </div>
 
+        <!--POST 2-->
+
+        <br>
+        <div class="posts">
+            <div class="headers">
+                <h4 id="post2">Bring it</h4>
+                <p>01/02</p>
+            </div>
+            
+            <div class="post-imgs">
+                <img src="https://picsum.photos/400/400?random=2" alt="Post 2">
+            </div>
+            <div class="caption">
+                <span><strong>304 Likes</strong></span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae mauris lobortis, molestie nunc et, vehicula enim. Etiam volutpat faucibus.<strong>#BreatheCode</strong></p>
+            </div>
+        </div>
+
+        <!--POST 3-->
+
+       <br>
+        <div class="posts">
+            <div class="headers">
+                <h4 id="post3">Pay it</h4>
+                <p>01/03</p>
+            </div>
+            
+            <div class="post-imgs">
+                <img src="https://picsum.photos/400/400?random=3" alt="Post 3">
+            </div>
+            <div class="caption">
+                <span><strong>254 Likes</strong></span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec euismod lectus, vitae tincidunt diam. Phasellus vitae odio tortor. Sed.<strong>#BreatheCode</strong></p>
+            </div>
+        </div>
+
+        <!--ROW 2 POST 4-->
+
+        <br>
+        <div class="posts">
+            <div class="headers">
+                <h4 id="post4">Watch it</h4>
+                <p>01/04</p>
+            </div>
+            
+            <div class="post-imgs">
+                <img src="https://picsum.photos/400/400?random=4" alt="Post 4">
+            </div>
+            <div class="caption">
+                <span><strong>278 Likes</strong></span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non vehicula felis. Duis et egestas mauris, tristique viverra quam. Etiam.<strong>#BreatheCode</strong></p>
+            </div>
+        </div>
+
+        <!--POST 5-->
+
+        <br>
+        <div class="posts">
+            <div class="headers">
+                <h4 id="post5">Turn it</h4>
+                <p>01/05</p>
+            </div>
+            
+            <div class="post-imgs">
+                <img src="https://picsum.photos/400/400?random=5" alt="post 5">
+            </div>
+            <div class="caption">
+                <span><strong>355 Likes</strong></span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mauris massa, mollis eu consequat lacinia, consectetur nec lacus. Curabitur congue.<strong>#BreatheCode</strong></p>
+            </div>
+        </div>
+
+        <!--POST 6-->
+
+        <br>
+        <div class="posts">
+            <div class="headers">
+                <h4 id="post6">Leave it</h4>
+                <p>01/06</p>
+            </div>
+            
+            <div class="post-imgs">
+                <img src="https://picsum.photos/400/400?random=6" alt="post 6">
+            </div>
+            <div class="caption">
+                <span><strong>223 Likes</strong></span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus justo tortor, dapibus non eros ultrices, aliquam vestibulum tellus. Vestibulum in.<strong>#BreatheCode</strong></p>
+            </div>
+        </div>
+
+        <!--ROW 3 POST 7-->
+<br>
+        <hr size="1">
+        <div class="posts">
+            <div class="headers">
+                <h4 id="post7">Stop</h4>
+                <p>01/07</p>
+            </div>
+            
+            <div class="post-imgs">
+                <img src="https://picsum.photos/400/400?random=7" alt="Post 7">
+            </div>
+            <div class="caption">
+                <span><strong>586 Likes</strong></span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus laoreet varius dapibus. Sed aliquam suscipit velit mollis feugiat. Aliquam erat.<strong>#BreatheCode</strong></p>
+            </div>
+        </div>
+
+        <!--POST 8-->
+
+        <br>
+        <div class="posts">
+            <div class="headers">
+                <h4 id="post8">Format it</h4>
+                <p>01/08</p>
+            </div>
+            
+            <div class="post-imgs">
+                <img src="https://picsum.photos/400/400?random=8" alt="Post 8">
+            </div>
+            <div class="caption">
+                <span><strong>222 Likes</strong></span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vel accumsan quam. Curabitur accumsan libero eu est consequat, eget tempor.<strong>#BreatheCode</strong></p>
+            </div>
+        </div>
+
+        <!--POST 9-->
+
+        <br>
+        <div class="posts">
+            <div class="headers">
+                <h4 id="post9">Format it</h4>
+                <p>01/09</p>
+            </div>
+            
+            <div class="post-imgs">
+                <img src="https://picsum.photos/400/400?random=9" alt="Post 9">
+            </div>
+            <div class="caption">
+                <span><strong>185 Likes</strong></span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mollis neque ut erat dictum dictum. Nullam non egestas lorem. Morbi.<strong>#BreatheCode</strong></p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
